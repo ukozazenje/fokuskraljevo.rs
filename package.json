@@ -5,6 +5,7 @@
 	"author": "Aman Mittal <amandeepmittal@live.com>",
 	"dependencies": {
 		"bulma": "^0.7.4",
+		"formik": "^1.5.7",
 		"gatsby": "^2.3.25",
 		"gatsby-image": "^2.0.39",
 		"gatsby-plugin-google-analytics": "^2.0.18",
@@ -20,7 +21,8 @@
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"react-helmet": "^5.2.0",
-		"react-icons": "^3.6.1"
+		"react-icons": "^3.6.1",
+		"yup": "^0.27.0"
 	},
 	"keywords": [
 		"gatsby",
