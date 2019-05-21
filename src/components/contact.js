@@ -1,13 +1,15 @@
 import React from 'react';
 import { Formik, Field, Form} from 'formik';
 import logo from '../images/logo-fokus.png';
+import phone_icon from '../images/ic_phone_24px.svg';
 
 const Contact = () => (
   <section className="section contact">
     <div className="container">
       <h2 className="form-heading">
-        Tu smo za sva vasa pitanja
+        Tu smo za sva vaša pitanja
       </h2>
+      <a href="#" class="phone-mobile"><img className="phone-img" src={phone_icon} />+381 36 20 40 20</a>
       <div className="columns">
         <div className="column is-8-desktop">
           <div className="content">
@@ -24,13 +26,13 @@ const Contact = () => (
                 <div className="field">
                   <label className="label">Ime i prezime</label>
                   <div className="control">
-                    <Field type="text" name="name" className="input" type="text" placeholder="Unesite vase ime i prezime" />
+                    <Field type="text" name="name" className="input" type="text" placeholder="Unesite vaše ime i prezime" />
                   </div>
                 </div>
                 <div className="field">
                   <label className="label">Email</label>
                   <div className="control">
-                    <Field type="email" name="email" className="input" type="email" placeholder="Unesite vas email" />
+                    <Field type="email" name="email" className="input" type="email" placeholder="Unesite vaš email" />
                   </div>
                 </div>
                 <div className="field is-horizontal">
@@ -47,7 +49,7 @@ const Contact = () => (
                   <div className="field">
                     <div className="control">
                       <button className="button is-primary">
-                        Posalji
+                        Pošalji
                       </button>
                     </div>
                   </div>
@@ -64,7 +66,7 @@ const Contact = () => (
                 <h3>Kontakt</h3>
                 <ul>
                   <li className="fk-icon place">Dositejeva 16, Kraljevo</li>
-                  <li className="fk-icon phone">063 10 61 134</li>
+                  <li className="fk-icon phone">+381 36 20 40 20</li>
                   <li className="fk-icon email">mzecevic04@gmail.com</li>
                 </ul>
             </div>
@@ -76,7 +78,7 @@ const Contact = () => (
               <ul>
                 <li>08 do 20h radnim danima</li>
                 <li>08 do 15h subotom</li>
-                <li>Nedelja neradna</li>
+                <li>Nedeljom ne radimo</li>
               </ul>
             </div>
           </div>       
