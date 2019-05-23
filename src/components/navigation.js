@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { Link } from "gatsby";
 
 import './style.scss';
 import logo from '../images/logo-fokus.png';
@@ -32,17 +32,17 @@ class Navigation extends Component {
           </div>
           <div className={`navbar-menu ${this.state.toggleMenu ? 'is-active' : ''}`}>
             <div className="navbar-end">
-              <a className="navbar-item">
+              <Link to="/" className="navbar-item">
                 Početna
-              </a>
+              </Link>
 
               <a className="navbar-item">
                 O nama
               </a>
         
-              <a className="navbar-item">
+              <Link to="/cenovnik" className="navbar-item">
                 Cenovnik
-              </a>
+              </Link>
 
               <a className="navbar-item navbar-phone">
                 +381 36 20 40 20

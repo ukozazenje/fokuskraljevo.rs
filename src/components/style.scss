@@ -3,6 +3,12 @@
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+.hero.is-primary {
+  margin-bottom: 5rem;
+  background: #8e9eab;
+  text-align: center;
+  text-transform: uppercase;
+}
 .hero-img {
   .container {
     top: -35rem;
@@ -29,6 +35,31 @@
 }
 .navbar-menu.is-active {
   text-align: center;
+}
+.table thead td, .table thead th {
+  color: #fff;
+}
+.heading_table {
+  background: #00aeef;
+  font-size: 1.5em;
+  font-weight: 700;
+
+  td {
+    text-align: center;
+  }
+}
+.subheading_table th{
+  color: #2c3e50 !important;
+}
+.subheading_table th:nth-of-type(2) {
+  text-align: right;
+}
+th {
+  min-width: 6rem;
+}
+tr > td:nth-child(even){
+  text-align: right;
+  text-transform: uppercase;
 }
 
 @keyframes moveInLeft {
@@ -175,6 +206,9 @@ form {
   img {
     width: 10rem;
   }
+}
+.pricing-container {
+  margin-bottom: 4rem;
 }
 @media(max-width: 768px){
   .form-heading {
