@@ -3,6 +3,11 @@
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+.hero.is-primary.is-medium.about-hero {
+  background: url('../images/o-nama.jpg');
+  background-size: cover;
+  background-position: center;
+}
 .hero.is-primary {
   margin-bottom: 5rem;
   background: #8e9eab;
@@ -210,6 +215,17 @@ form {
 .pricing-container {
   margin-bottom: 4rem;
 }
+
+.about-content {
+  min-height: 50vh;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  p{
+    margin: 0;
+  }
+}
 @media(max-width: 768px){
   .form-heading {
     font-size: 1.3rem;
@@ -237,6 +253,14 @@ form {
   }
   .navbar-item.navbar-phone {
     display: none;
+  }
+  .about-content {
+    width: 100%;
+    margin-bottom: 3rem;
+    p {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
 }
 @media(min-width: 769px){

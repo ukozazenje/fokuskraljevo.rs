@@ -98,7 +98,7 @@ const CenovnikTable = () => (
                 <td>2000 rsd</td>
               </tr>
               <tr>
-                <td>Aplikacija Triamcionalna peribulbarno</td>
+                <td>Aplikacija triamcinolona peribulbarno</td>
                 <td>4000 rsd</td>
               </tr>
               <tr>
@@ -187,7 +187,7 @@ const CenovnikTable = () => (
                 <td>60000 rsd</td>
               </tr>
               <tr>
-                <td>Operacija ektropijuma ( uvrnutosti kapaka ) </td>
+                <td>Operacija entropijuma ( uvrnutosti kapaka ) </td>
                 <td>60000 rsd</td>
               </tr>
               <tr>
@@ -213,7 +213,7 @@ const CenovnikTable = () => (
                 <td>28000 rsd</td>
               </tr>
               <tr>
-                <td>Operacija tumora kapaka 
+                <td>Pregled tumora kapaka 
                   uz ph preglod</td>
                 <td>od 20000 do <br />60000 rsd</td>
               </tr>

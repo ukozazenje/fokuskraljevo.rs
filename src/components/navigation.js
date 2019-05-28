@@ -18,12 +18,12 @@ class Navigation extends Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <a
+            <Link to="/"
               className="navbar-item"
-              href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
             >
               <img src={logo} alt="logo-fokus" />
-            </a>
+            </Link>
+            
             <a role="button" className="navbar-burger burger" onClick={this.toggleMenuHandler}>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -36,15 +36,15 @@ class Navigation extends Component {
                 Početna
               </Link>
 
-              <a className="navbar-item">
+              <Link to="/o-nama" className="navbar-item">
                 O nama
-              </a>
+              </Link>
         
               <Link to="/cenovnik" className="navbar-item">
                 Cenovnik
               </Link>
 
-              <a className="navbar-item navbar-phone">
+              <a href="tel:+38136204020" className="navbar-item navbar-phone">
                 +381 36 20 40 20
               </a>
             </div>

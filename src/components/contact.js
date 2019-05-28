@@ -66,13 +66,10 @@ const Contact = () => (
                 <h3>Kontakt</h3>
                 <ul>
                   <li className="fk-icon place">Dositejeva 16, Kraljevo</li>
-                  <li className="fk-icon phone">+381 36 20 40 20</li>
-                  <li className="fk-icon email">mzecevic04@gmail.com</li>
+                  <li className="fk-icon phone"><a href="tel:+38136204020">+381 36 20 40 20</a></li>
+                  <li className="fk-icon email"><a href="mailto:fokuskraljevo@gmail.com">fokuskraljevo@gmail.com</a></li>
                 </ul>
             </div>
-            {/* <div className="contact-logo">
-              <img src={logo} alt="fokus logo" />
-            </div> */}
             <div className="working-hours">
               <h3>Radno vreme</h3>
               <ul>
