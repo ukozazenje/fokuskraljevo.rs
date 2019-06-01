@@ -145,6 +145,11 @@ form {
   display: block;
   height: 3px;
 }
+.error-msg {
+  color: #e74c3c;
+  text-align: right;
+  font-size: 0.7rem;
+}
 .contact {
   background: #8e9eab;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #fff, #cacaca);  /* Chrome 10-25, Safari 5.1-6 */

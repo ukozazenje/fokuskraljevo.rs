@@ -1,7 +1,8 @@
 import React from 'react';
-import { Formik, Field, Form} from 'formik';
+import { Formik, Field, Form, ErrorMessage} from 'formik';
 import logo from '../images/logo-fokus.png';
 import phone_icon from '../images/ic_phone_24px.svg';
+import SignUpSchema from './validate'
 
 const Contact = () => (
   <section className="section contact">
@@ -15,23 +16,26 @@ const Contact = () => (
           <div className="content">
           <Formik
             initialValues={{ name: "", email: "", subject: "" }}
+            validationSchema={SignUpSchema}
             onSubmit={(values, actions) => {
               setTimeout(() => {
                 alert(JSON.stringify(values, null, 2));
                 actions.setSubmitting(false);
               }, 1000);
             }}
-            render={props => (
+            render={({errors,touched }) => (
               <Form action="">
                 <div className="field">
                   <label className="label">Ime i prezime</label>
                   <div className="control">
+                    {errors.name && touched.name ? ( <div className="error-msg">{errors.name}</div> ) : null}
                     <Field type="text" name="name" className="input" type="text" placeholder="Unesite vaše ime i prezime" />
                   </div>
                 </div>
                 <div className="field">
                   <label className="label">Email</label>
                   <div className="control">
+                    {errors.email && touched.email ? ( <div className="error-msg">{errors.email}</div> ) : null}
                     <Field type="email" name="email" className="input" type="email" placeholder="Unesite vaš email" />
                   </div>
                 </div>
@@ -40,6 +44,7 @@ const Contact = () => (
                     <div className="field">
                       <label className="label">Pitanja</label>
                       <div className="control">
+                        {errors.subject && touched.subject ? ( <div className="error-msg">{errors.subject}</div> ) : null}
                         <Field component="textarea" name="subject" className="textarea" placeholder="Postavite pitanje" />
                       </div>
                     </div>
