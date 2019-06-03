@@ -3,6 +3,7 @@ import { Formik, Field, Form, ErrorMessage} from 'formik';
 import logo from '../images/logo-fokus.png';
 import phone_icon from '../images/ic_phone_24px.svg';
 import SignUpSchema from './validate'
+import axios from 'axios'
 
 const Contact = () => (
   <section className="section contact">
@@ -15,13 +16,21 @@ const Contact = () => (
         <div className="column is-8-desktop">
           <div className="content">
           <Formik
-            initialValues={{ name: "", email: "", subject: "" }}
+            initialValues={{ name: "", email: "", message: "" }}
             validationSchema={SignUpSchema}
             onSubmit={(values, actions) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                actions.setSubmitting(false);
-              }, 1000);
+              axios({
+                method: 'post',
+                url: '/main.php',
+                data: {
+                  name: values.name,
+                  email: values.email,
+                  message: values.message
+                },
+                headers: {
+                  'content-type': 'application/json',
+                },
+              });
             }}
             render={({errors,touched }) => (
               <Form action="">
@@ -44,8 +53,8 @@ const Contact = () => (
                     <div className="field">
                       <label className="label">Pitanja</label>
                       <div className="control">
-                        {errors.subject && touched.subject ? ( <div className="error-msg">{errors.subject}</div> ) : null}
-                        <Field component="textarea" name="subject" className="textarea" placeholder="Postavite pitanje" />
+                        {errors.message && touched.message ? ( <div className="error-msg">{errors.message}</div> ) : null}
+                        <Field component="textarea" name="message" className="textarea" placeholder="Postavite pitanje" />
                       </div>
                     </div>
                   </div>

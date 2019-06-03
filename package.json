@@ -4,6 +4,7 @@
 	"version": "1.5.2",
 	"author": "Aman Mittal <amandeepmittal@live.com>",
 	"dependencies": {
+		"axios": "^0.19.0",
 		"bulma": "^0.7.4",
 		"formik": "^1.5.7",
 		"gatsby": "^2.3.25",
