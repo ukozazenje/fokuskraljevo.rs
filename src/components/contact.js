@@ -5,13 +5,34 @@ import phone_icon from '../images/ic_phone_24px.svg';
 import SignUpSchema from './validate'
 import axios from 'axios'
 
+function serialize(form) {
+  var field, l, s = [];
+  if (typeof form == 'object' && form.nodeName == "FORM") {
+      var len = form.elements.length;
+      for (var i = 0; i < len; i++) {
+          field = form.elements[i];
+          if (field.name && !field.disabled && field.type != 'file' && field.type != 'reset' && field.type != 'submit' && field.type != 'button') {
+              if (field.type == 'select-multiple') {
+                  l = form.elements[i].options.length;
+                  for (var j = 0; j < l; j++) {
+                      if (field.options[j].selected)
+                          s[s.length] = encodeURIComponent(field.name) + "=" + encodeURIComponent(field.options[j].value);
+                  }
+              } else if ((field.type != 'checkbox' && field.type != 'radio') || field.checked) {
+                  s[s.length] = encodeURIComponent(field.name) + "=" + encodeURIComponent(field.value);
+              }
+          }
+      }
+  }
+  return s.join('&').replace(/%20/g, '+');
+}
 const Contact = () => (
   <section className="section contact">
     <div className="container">
       <h2 className="form-heading">
         Tu smo za sva vaša pitanja
       </h2>
-      <a href="#" class="phone-mobile"><img className="phone-img" src={phone_icon} />+381 36 20 40 20</a>
+      <a href="#" className="phone-mobile"><img className="phone-img" src={phone_icon} />+381 36 20 40 20</a>
       <div className="columns">
         <div className="column is-8-desktop">
           <div className="content">
@@ -31,6 +52,7 @@ const Contact = () => (
                   'content-type': 'application/json',
                 },
               });
+      
             }}
             render={({errors,touched }) => (
               <Form action="">
@@ -62,7 +84,7 @@ const Contact = () => (
                 <div className="field-body">
                   <div className="field">
                     <div className="control">
-                      <button className="button is-primary">
+                      <button type="submi" className="button is-primary">
                         Pošalji
                       </button>
                     </div>

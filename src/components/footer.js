@@ -2,8 +2,8 @@ import React from 'react';
 import './style.scss';
 
 const Footer = () => (
-	<footer class="footer has-text-centered">
-		<div class="container">
+	<footer className="footer has-text-centered">
+		<div className="container">
 				<div className="columns">
 				<div className="column">
 					<p>©Očnabolnica Foukus</p>
