@@ -32,7 +32,7 @@ const Contact = () => (
       <h2 className="form-heading">
         Tu smo za sva vaša pitanja
       </h2>
-      <a href="#" className="phone-mobile"><img className="phone-img" src={phone_icon} />+381 36 20 40 20</a>
+      <a href="tel:+38136204020" className="phone-mobile"><img className="phone-img" src={phone_icon} />+381 36 20 40 20</a>
       <div className="columns">
         <div className="column is-8-desktop">
           <div className="content">
