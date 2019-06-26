@@ -6,7 +6,7 @@ const Footer = () => (
 		<div className="container">
 				<div className="columns">
 				<div className="column">
-					<p>©Očnabolnica Foukus</p>
+					<p>©Očna bolnica Fokus</p>
 				</div>
 			</div>
 		</div>

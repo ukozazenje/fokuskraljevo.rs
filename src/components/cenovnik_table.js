@@ -57,13 +57,13 @@ const CenovnikTable = () => (
                 <td>6000 rsd</td>
               </tr>
               <tr>
-                <td>Subconjunctiualna injekcija</td>
+                <td>Subkonjunktivalna injekcija</td>
                 <td>800 rsd</td>
               </tr>
               <tr>
                 <td>Kompjuterizovano vidno polje
                   Perimetrija ( 1 oko ) 
-                  Usloga obuhvata perimetrijsko merenje
+                  Usluga obuhvata perimetrijsko merenje
                   oba oka </td>
                 <td>2000 rsd</td>
               </tr>

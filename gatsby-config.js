@@ -1,10 +1,10 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Očnabolnica Foukus Fokus Kraljevo',
+		title: 'Očna bolnica Fokus Kraljevo',
 		author: 'zeko04',
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-		keywords: `Ocna bolnica, Fokus kraljevo`,
+		description: 'Pruža vrhunsku oftamološku uslugu, od strane ljudi iz struke, sa višedecenijskim iskustvom i željom da u svom poslu, u svom gradu, i u najboljem stručnom ambijentu podele svoje znanje i doprinesu ozdravljenju svojim pacijentima ',
+		keywords: `Očna bolnica, Fokus kraljevo`,
 		github: `https://github.com/ukozazenje`,
 		gatsby: 'https://www.gatsbyjs.org/',
 		bulma: 'https://bulma.io/',
@@ -24,8 +24,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: 'Fokus Kraljevo',
-				short_name: 'Fokus',
+				name: 'Očna bolnica Fokus Kraljevo',
+				short_name: 'Očna bolnica Fokus',
 				start_url: '/',
 				background_color: '#2980b9',
 				theme_color: '#2980b9',

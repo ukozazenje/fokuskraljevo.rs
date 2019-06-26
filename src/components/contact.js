@@ -101,7 +101,7 @@ const Contact = () => (
             <div className="contact-data">
                 <h3>Kontakt</h3>
                 <ul>
-                  <li className="fk-icon place">Dositejeva 16, Kraljevo</li>
+                  <li className="fk-icon place">Dositejeva 19, Kraljevo</li>
                   <li className="fk-icon phone"><a href="tel:+38136204020">+381 36 20 40 20</a></li>
                   <li className="fk-icon email"><a href="mailto:fokuskraljevo@gmail.com">fokuskraljevo@gmail.com</a></li>
                 </ul>
