@@ -29,7 +29,7 @@ const CenovnikTable = () => (
             </thead>
             <tbody>
               <tr>
-                <td>Pregled lekara specijaliste oftamologije</td>
+                <td>Pregled lekara specijaliste oftalmologije</td>
                 <td>2000 rsd</td>
               </tr>
               <tr>
@@ -53,16 +53,12 @@ const CenovnikTable = () => (
                 <td>2000 rsd</td>
               </tr>
               <tr>
-                <td>Čmičak</td>
-                <td>6000 rsd</td>
-              </tr>
-              <tr>
                 <td>Subkonjunktivalna injekcija</td>
                 <td>800 rsd</td>
               </tr>
               <tr>
                 <td>Kompjuterizovano vidno polje
-                  Perimetrija ( 1 oko ) 
+                  Perimetrija  
                   Usluga obuhvata perimetrijsko merenje
                   oba oka </td>
                 <td>2000 rsd</td>
@@ -123,10 +119,6 @@ const CenovnikTable = () => (
             </thead>
             <tbody>
               <tr>
-                <td>Aplikacija terapijskog mekog kontaktnog sočiva</td>
-                <td>1000 rsd</td>
-              </tr>
-              <tr>
                 <td>Bris oba oka</td>
                 <td>800 rsd</td>
               </tr>
@@ -136,7 +128,7 @@ const CenovnikTable = () => (
               </tr>
               <tr>
                 <td>Esteska hirurgija kapaka ( oba oka )</td>
-                <td>7200 rsd</td>
+                <td>72000 rsd</td>
               </tr>
               <tr>
                 <td>Fokometrija</td>
@@ -149,14 +141,6 @@ const CenovnikTable = () => (
               <tr>
                 <td>Hiruško lečenje perforativne povrede oka</td>
                 <td>141600</td>
-              </tr>
-              <tr>
-                <td>Ispitivanje suznog filma</td>
-                <td>1000 rsd</td>
-              </tr>
-              <tr>
-                <td>Kontrolni pregled</td>
-                <td>1000 rsd</td>
               </tr>
               <tr>
                 <td>Laser fotokoagulacija jednog oka</td>
@@ -173,10 +157,6 @@ const CenovnikTable = () => (
               <tr>
                 <td>Merenje debljine rožnjace - pehimetrija</td>
                 <td>1200 rsd</td>
-              </tr>
-              <tr>
-                <td>Merenje očnog pritiska / IOP / tonometrija</td>
-                <td>900 rsd</td>
               </tr>
               <tr>
                 <td>Oftamološki ultrazvucni pregled b - scann</td>
