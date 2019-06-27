@@ -33,7 +33,7 @@ const CenovnikTable = () => (
                 <td>2000 rsd</td>
               </tr>
               <tr>
-                <td>Oftamološki ultrazvučni pregled</td>
+                <td>Oftalmološki ultrazvučni pregled</td>
                 <td>3000 rsd</td>
               </tr>
               <tr>
@@ -140,7 +140,7 @@ const CenovnikTable = () => (
               </tr>
               <tr>
                 <td>Hiruško lečenje perforativne povrede oka</td>
-                <td>141600</td>
+                <td>141600 rsd</td>
               </tr>
               <tr>
                 <td>Laser fotokoagulacija jednog oka</td>
