@@ -4,6 +4,8 @@ import logo from '../images/logo-fokus.png';
 import phone_icon from '../images/ic_phone_24px.svg';
 import SignUpSchema from './validate'
 import axios from 'axios'
+import { navigate } from 'gatsby'
+
 
 function serialize(form) {
   var field, l, s = [];
@@ -52,10 +54,10 @@ const Contact = () => (
                   'content-type': 'application/json',
                 },
               });
-      
+              navigate('/hvala')
             }}
             render={({errors,touched }) => (
-              <Form action="">
+              <Form>
                 <div className="field">
                   <label className="label">Ime i prezime</label>
                   <div className="control">
